@@ -1,0 +1,29 @@
+# === Lethe Project Git Ignore ===
+
+# Python-Spezifisch
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# IDEs, Editoren & Obsidian
+.idea/
+.vscode/
+.obsidian/workspace
+*.swp
+*~
+
+# Logs und temporäre Daten
+*.log
+.DS_Store
+
+# Secrets & Environment
+.env
+.env.*
+

@@ -1,0 +1,286 @@
+{
+  "TITLE_PATTERNS": [
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": { "IN": ["herr", "herrn", "frau"] } },
+        { "LOWER": "dr." },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": { "IN": ["herr", "herrn", "frau"] } },
+        { "LOWER": "dr." },
+        { "IS_TITLE": true },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": { "IN": ["herr", "herrn", "frau"] } },
+        { "LOWER": "prof." },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": { "IN": ["herr", "herrn", "frau"] } },
+        { "LOWER": "prof." },
+        { "IS_TITLE": true },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": "prof." },
+        { "LOWER": "dr." },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": "prof." },
+        { "LOWER": "dr." },
+        { "IS_TITLE": true },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": "dr." },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": "dr." },
+        { "IS_TITLE": true },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": "prof." },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": "prof." },
+        { "IS_TITLE": true },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": { "IN": ["herr", "herrn", "frau", "mr.", "mr", "mrs.", "mrs", "ms.", "ms", "miss"] } },
+        { "IS_TITLE": true }
+      ]
+    },
+    {
+      "label": "PER",
+      "pattern": [
+        { "LOWER": { "IN": ["herr", "herrn", "frau", "mr.", "mr", "mrs.", "mrs", "ms.", "ms", "miss"] } },
+        { "IS_TITLE": true },
+        { "IS_TITLE": true }
+      ]
+    }
+  ],
+  "SKIP_PATTERNS": [
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*ministerium(s|en)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*amt(s|es|er|ern)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*behörde(n)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*kammer(n)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*(polizei|präsidium(s)?)$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*freistaat(es|s)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*regierung(en)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*direktion(en)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*agentur(en)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*anstalt(en)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*kasse(n)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*gericht(s|e|en)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*institut(s|en)?$" } }
+      ]
+    },
+    {
+      "label": "SKIP",
+      "pattern": [
+        { "lower": { "regex": "^.*(agentur|institut|ministerium|amt|behörde|kammer|direktion|anstalt|kasse|gericht|zentrum|zentrums)(s|en|es)?$" } },
+        { "lower": "für" },
+        { "is_alpha": true, "op": "+" }
+      ]
+    }
+  ],
+  "VALID_BIC_COUNTRY_CODES": [
+    "AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AQ", "AR", "AS", "AT", "AU", "AW", "AX", "AZ",
+    "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BL", "BM", "BN", "BO", "BQ", "BR", "BS",
+    "BT", "BV", "BW", "BY", "BZ", "CA", "CC", "CD", "CF", "CG", "CH", "CI", "CK", "CL", "CM", "CN",
+    "CO", "CR", "CU", "CV", "CW", "CX", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE",
+    "EG", "EH", "ER", "ES", "ET", "FI", "FJ", "FK", "FM", "FO", "FR", "GA", "GB", "GD", "GE", "GF",
+    "GG", "GH", "GI", "GL", "GM", "GN", "GP", "GQ", "GR", "GS", "GT", "GU", "GW", "GY", "HK", "HM",
+    "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IM", "IN", "IO", "IQ", "IR", "IS", "IT", "JE", "JM",
+    "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KP", "KR", "KW", "KY", "KZ", "LA", "LB", "LC",
+    "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MF", "MG", "MH", "MK",
+    "ML", "MM", "MN", "MO", "MP", "MQ", "MR", "MS", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA",
+    "NC", "NE", "NF", "NG", "NI", "NL", "NO", "NP", "NR", "NU", "NZ", "OM", "PA", "PE", "PF", "PG",
+    "PH", "PK", "PL", "PM", "PN", "PR", "PS", "PT", "PW", "PY", "QA", "RE", "RO", "RS", "RU", "RW",
+    "SA", "SB", "SC", "SD", "SE", "SG", "SH", "SI", "SJ", "SK", "SL", "SM", "SN", "SO", "SR", "SS",
+    "ST", "SV", "SX", "SY", "SZ", "TC", "TD", "TF", "TG", "TH", "TJ", "TK", "TL", "TM", "TN", "TO",
+    "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UM", "US", "UY", "UZ", "VA", "VC", "VE", "VG", "VI",
+    "VN", "VU", "WF", "WS", "YE", "YT", "ZA", "ZM", "ZW"
+  ],
+  "ALLGEMEINE_ABKUERZUNGEN": [
+    "alk", "abk", "dr", "prof", "ing", "i.s", "alb", "krea",
+    "ges", "n", "u.a", "evtl", "z.zt", "incl", "gem", "ca", "bes", "z.b", "bzw", "sog",
+    "mfg", "vg", "lg",
+    "ki", "it", "edv", "ai", "ml", "nlp", "api", "ui", "ux", "db", "os", "pdf", "app", "pc", "mac",
+    "pr", "hr", "ceo", "cto", "cfo", "b2b", "b2c",
+    "ag", "gmbh", "ug", "kg", "ohg", "se", "ev", "gbr"
+  ],
+  "COMMON_GERMAN_WORDS": [
+    "ich", "du", "er", "sie", "es", "wir", "ihr",
+    "mich", "dich", "ihn", "uns", "euch",
+    "mir", "dir", "ihm", "ihnen", "ihnes",
+    "mein", "meine", "meinen", "meinem", "meines", "meiner",
+    "dein", "deine", "deinen", "deinem", "deines", "deiner",
+    "sein", "seine", "seinen", "seinem", "seines", "seiner",
+    "ihre", "ihren", "ihrem", "ihres", "ihrer",
+    "unser", "unsere", "unseren", "unserem", "unseres", "unserer",
+    "euer", "euere", "eueren", "euerem", "eueres", "euerer",
+    "ihen",
+    "der", "die", "das", "des", "dem", "den",
+    "ein", "eine", "eines", "einem", "einen", "einer",
+    "jener", "jene", "jenes", "jenem", "jenen",
+    "dieser", "diese", "dieses", "diesem", "diesen",
+    "solcher", "solche", "solches", "solchem", "solchen",
+    "jeder", "jede", "jedes", "jedem", "jeden",
+    "mancher", "manche", "manches", "manchem", "manchen",
+    "alle", "allen", "aller", "alles",
+    "in", "an", "auf", "unter", "über", "vor", "hinter", "neben", "zwischen",
+    "mit", "nach", "von", "zu", "aus", "bei", "für", "um", "durch", "ohne", "gegen",
+    "während", "wegen", "trotz", "bezüglich", "gemäß", "laut", "mithilfe", "mittels",
+    "seit", "bis", "ab", "seitens", "zwecks",
+    "schreiben", "schreibens", "schreibes", "schreibe",
+    "eingang", "eingangs", "eingänge", "eingängen",
+    "unterlage", "unterlagen",
+    "ansprechpartner", "ansprechparters", "ansprechpartnerin", "ansprechpartnerinnen", "ansprechparter",
+    "telefon", "telefonnummer", "mobil", "tel", "email", "e-mail",
+    "herr", "herrn", "frau", "frauen"
+  ],
+  "COURT_INSTITUTIONS": [
+    "Bundesarbeitsgericht", "(BAG)",
+    "Bundesfinanzhof", "(BFH)",
+    "Bundesgerichtshof", "(BGH)",
+    "Bundessozialgericht", "(BSG)",
+    "Bundesverwaltungsgericht", "(BVerwG)",
+    "Bundesverfassungsgericht", "(BVerfG)",
+    "Gemeinsamer Senat der obersten Gerichtshöfe des Bundes", "(GmS-OGB)",
+    "Bundespatentgericht", "(BPatG)",
+    "Truppendienstgericht", "(TDG)",
+    "Oberlandesgericht", "(OLG)",
+    "Kammergericht", "(KG)",
+    "Bayerisches Oberstes Landesgericht", "(BayObLG)",
+    "Landgericht", "(LG)",
+    "Amtsgericht", "(AG)",
+    "Landesarbeitsgericht", "(LAG)",
+    "Arbeitsgericht", "(ArbG)",
+    "Finanzgericht", "(FG)",
+    "Landessozialgericht", "(LSG)",
+    "Sozialgericht", "(SG)",
+    "Oberverwaltungsgericht", "(OVG)",
+    "Bayerischer Verwaltungsgerichtshof", "(BayVGH)",
+    "Verwaltungsgerichtshof", "(VGH)",
+    "Verwaltungsgericht", "(VG)",
+    "Landesverfassungsgericht", "(LVerfG)",
+    "Verfassungsgerichtshof", "(VerfGH)",
+    "Verfassungsgericht", "(VerfG)",
+    "Staatsgerichtshof", "(StGH)",
+    "Familiengericht", "(FamG)",
+    "Nachlassgericht", "(NachlG)",
+    "Registergericht", "(RegG)",
+    "Insolvenzgericht", "(InsG)",
+    "Vollstreckungsgericht", "(VollstrG)",
+    "Schöffengericht", "(SchöffG)",
+    "Jugendschöffengericht", "(JSchöffG)",
+    "Kammer für Handelssachen", "(KfH)",
+    "Europäischer Gerichtshof", "(EuGH)",
+    "Gericht der Europäischen Union", "(EuG)",
+    "Europäischer Gerichtshof für Menschenrechte", "(EGMR)",
+    "Internationaler Gerichtshof", "(IGH)"
+  ],
+  "LEGAL_FORMS_PATTERN": "\\b(?:GmbH(?:\\s*&\\s*Co\\.?\\s*KGa?A?)?|AG(?:\\s*&\\s*Co\\.?\\s*KG)?|UG(?:\\s*&\\s*Co\\.?\\s*KG)?|KGaA|SE|KG|OHG|GbR|PartG(?:mbB)?|EWIV|e\\.?\\s*K(?:fm\\.?|fr\\.?)?|e\\.?\\s*[VG]\\.?|Stiftung|gAG|gGmbH|gUG|gKG|AöR|KdöR|Ltd\\.?|LLC|Inc\\.?|Corp\\.?|S\\.?A\\.?|S\\.?à\\s*r\\.?l\\.?|B\\.?V\\.?|N\\.?V\\.?|AB|A/S|SARL|SpA|Sp\\.\\s*z\\s*o\\.?o\\.?)\\b"
+}
